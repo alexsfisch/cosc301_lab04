@@ -32,14 +32,18 @@ You can write/paste your answers (text and/or code) into the ``lab04.txt`` file 
             return 0;
         }
     
-..
 
+
+This function calls the fork function which first runs the child node, prints who are you? and then adds 50 to value. It then runs the parent node which prints Or am I and the original value -50. 
 
 
 2.  Write an ill-tempered program that uses the ``fork`` system call in an
 effort to make the operating system crash (or run very slowly).  Careful with this one --- only run it if you have all your work saved.
 
-    
+        int main(int argc, char **argv) {
+		while(1){
+			fork();
+		}
 
 3.  The following code (also in the repo as ``fork03.c``)
 uses the ``execv`` system call to start and run the ``ps`` program. 

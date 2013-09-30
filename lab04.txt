@@ -34,7 +34,7 @@ You can write/paste your answers (text and/or code) into the ``lab04.txt`` file 
     
 
 
-This function calls the fork function which first runs the child node, prints who are you? and then adds 50 to value. It then runs the parent node which prints Or am I and the original value -50. 
+This function calls the fork function. It creates a new process with identical elements such as local variables, function parameters, and continues executing from the instruction line from which fork was called. Since there is no wait function call, it then runs the child or the parent (Can very) and prints the messages and computes the new value. Then both of the process finish at return = 0; 
 
 
 2.  Write an ill-tempered program that uses the ``fork`` system call in an
